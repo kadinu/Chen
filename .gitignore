@@ -1,8 +1,16 @@
-# mac os
+# mac os ignore
 .DS_Store
 
-# git
+# git ignore
 .gitignore
+.git
 
-# vim
+# temp ignore
+*.bak
+*.cache
+*.diff
+*.log
+*.out
+*.patch
 *.swp
+*.tmp
