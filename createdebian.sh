@@ -18,10 +18,10 @@ sudo apt-get update
 
 sudo apt-get install -y git
 git clone http://github.com/kadinu/Chen.git
-cp -R ~/Chen/.config ~
-cp -R ~/Chen/.vim ~
-cp ~/Chen/.vimrc ~
-rm -rf ~/Chen
+cp -R ./Chen/.config ~
+cp -R ./Chen/.vim ~
+cp ./Chen/.vimrc ~
+rm -rf ./Chen
 
 sudo apt-get install -y xorg i3 zsh sakura lightdm ttf-wqy-zenhei vim ctags cscope volumeicon-alsa fcitx-sunpinyin dbus-x11 xcompmgr feh conky-all
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
