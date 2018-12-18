@@ -154,12 +154,13 @@ bar {
 
 # autostart
 exec --no-startup-id xcompmgr &
+exec --no-startup-id volumeicon &
 
 # background
 exec --no-startup-id feh --bg-scale "$HOME/.config/mydesktopbg/timg.jpg"
 
 # systeminfo
-#exec --no-startup-id conky -c "$HOME/.config/conky/conkyrc_grey"
+exec --no-startup-id conky -c "$HOME/.config/conky/conkyrc_grey"
 
 # border
 hide_edge_borders none
