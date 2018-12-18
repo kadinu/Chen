@@ -1,18 +1,18 @@
 #!/bin/bash
 
-sudo sed 'a\LANG=zh_CN.UTF-8' /etc/environment
-sudo sed 'a\LC_ALL=zh_CN.UTF-8' /etc/environment
+sudo echo "LANG=zh_CN.UTF-8" >> /etc/environment
+sudo echo "LC_ALL=zh_CN.UTF-8" >> /etc/environment
 
-sudo mv /etc/apt/sources.list
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo touch /etc/apt/sources.list
-sudo sed 'a\deb http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\# deb-src http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\deb http://security.debian.org/debian-security stretch/updates main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\# deb-src http://security.debian.org/debian-security stretch/updates main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\deb http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\# deb-src http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\# deb http://mirrors.ustc.edu.cn/debian stretch-backports main contrib non-free' /etc/apt/sources.list
-sudo sed 'a\# deb-src http://mirrors.ustc.edu.cn/debian stretch-backports main contrib non-free' /etc/apt/sources.list
+sudo echo "deb http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free" >> /etc/apt/sources.list
+sudo echo "# deb-src http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free" /etc/apt/sources.list
+sudo echo "deb http://security.debian.org/debian-security stretch/updates main contrib non-free" /etc/apt/sources.list
+sudo echo "# deb-src http://security.debian.org/debian-security stretch/updates main contrib non-free" /etc/apt/sources.list
+sudo echo "deb http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free" /etc/apt/sources.list
+sudo echo "# deb-src http://mirrors.ustc.edu.cn/debian/ stretch-updates main contrib non-free" /etc/apt/sources.list
+sudo echo "# deb http://mirrors.ustc.edu.cn/debian stretch-backports main contrib non-free" /etc/apt/sources.list
+sudo echo "# deb-src http://mirrors.ustc.edu.cn/debian stretch-backports main contrib non-free" /etc/apt/sources.list
 
 sudo apt-get update
 
