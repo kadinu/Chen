@@ -23,5 +23,3 @@ cp -R ./Chen/.vim ~
 cp ./Chen/.vimrc ~
 rm -rf ./Chen
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-sudo apt-get install -y xorg i3 zsh sakura lightdm ttf-wqy-zenhei volumeicon-alsa fcitx-sunpinyin dbus-x11 xcompmgr feh conky-all
