@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sudo sh -c 'echo "LANG=zh_CN.UTF-8" >> /etc/environment'
-sudo sh -c 'echo "LC_ALL=zh_CN.UTF-8" >> /etc/environment'
-
 # debian 8 jessie sources list
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo touch /etc/apt/sources.list
