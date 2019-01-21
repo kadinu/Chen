@@ -6,13 +6,8 @@ sudo sh -c 'echo "LC_ALL=zh_CN.UTF-8" >> /etc/environment'
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo touch /etc/apt/sources.list
 sudo sh -c 'echo "deb http://mirrors.ustc.edu.cn/debian/ jessie main contrib non-free" >> /etc/apt/sources.list'
-sudo sh -c 'echo "# deb-src http://mirrors.ustc.edu.cn/debian/ jessie main contrib non-free" >> /etc/apt/sources.list'
 sudo sh -c 'echo "deb http://security.debian.org/debian-security jessie/updates main contrib non-free" >> /etc/apt/sources.list'
-sudo sh -c 'echo "# deb-src http://security.debian.org/debian-security jessie/updates main contrib non-free" >> /etc/apt/sources.list'
 sudo sh -c 'echo "deb http://mirrors.ustc.edu.cn/debian/ jessie-updates main contrib non-free" >> /etc/apt/sources.list'
-sudo sh -c 'echo "# deb-src http://mirrors.ustc.edu.cn/debian/ jessie-updates main contrib non-free" >> /etc/apt/sources.list'
-sudo sh -c 'echo "# deb http://mirrors.ustc.edu.cn/debian jessie-backports main contrib non-free" >> /etc/apt/sources.list'
-sudo sh -c 'echo "# deb-src http://mirrors.ustc.edu.cn/debian jessie-backports main contrib non-free" >> /etc/apt/sources.list'
 
 sudo apt-get update
 
