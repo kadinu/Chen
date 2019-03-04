@@ -31,5 +31,8 @@ git clone http://github.com/kadinu/Chen.git
 cp -R ./Chen/.config ~
 cp -R ./Chen/.vim ~
 cp ./Chen/.vimrc ~
+# raspbian 9 stretch report ip
+#sudo mv ./Chen/speak_ip.py /var/
+#echo "/usr/bin/python /var/speak_ip.py &" | sudo tee -a /etc/rc.local
 rm -rf ./Chen
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
