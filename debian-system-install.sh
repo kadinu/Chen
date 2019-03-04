@@ -31,7 +31,7 @@ git clone http://github.com/kadinu/Chen.git
 cp -R ./Chen/.config ~
 cp -R ./Chen/.vim ~
 cp ./Chen/.vimrc ~
-# raspbian 9 stretch report ip
+# raspbian 9 stretch report ip, must modify speak_ip.py(password) and rc.local(exit 0)
 #sudo mv ./Chen/speak_ip.py /var/
 #echo "/usr/bin/python /var/speak_ip.py &" | sudo tee -a /etc/rc.local
 rm -rf ./Chen
