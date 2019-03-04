@@ -12,7 +12,7 @@ from email.mime.image import MIMEImage
 # this is just a simple format,this e-mail doesn't exist.
 smtpserver = "smtp.163.com"
 username = "atomylg@163.com"
-password = "nmmevvpymkehknea"
+password = "xxxxxxx"
 sender = "atomylg@163.com"
 receiver = ["atomylg@163.com"]
 subject = "[Raspberry Pi] IP Report"
